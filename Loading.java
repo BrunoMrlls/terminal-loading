@@ -5,14 +5,14 @@ public class Loading {
 		String symbol = "*";
 
 		for(;;)
-		for (int i=0; i<indexes; i++) {
-			String dots = "";
-			while (dots.length() < indexes) {dots+=" ";}
+			for (int i=0; i<indexes; i++) {
+				String dots = "";
+				while (dots.length() < indexes) {dots+=" ";}
 
-			dots = dots.substring(0, i)+symbol+dots.substring(i+1);
-			showMessage(String.format(middle, dots));
-			Thread.sleep(500);
-		}
+				dots = dots.substring(0, i)+symbol+dots.substring(i+1);
+				showMessage(String.format(middle, dots));
+				Thread.sleep(500);
+			}
 	}
 	
 	public static void showMessage(String message) {
